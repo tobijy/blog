@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+	<head>
+		<title>Tobias Vogel</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+		<style>{% block style %}{% endblock %}</style>
+	</head>
+	<body>
+		<div class="main">
+			<h1>Tobias Vogel</h1>
+			<div class="navigation">
+				<a href="/blog/">blog</a>
+				<!--<a href="#">archive</a>-->
+				<a href="/contact/">contact</a>
+			</div>
+		{% block body %}{% endblock %}
+		</div>
+	</body>
+</html>
